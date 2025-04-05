@@ -1,6 +1,6 @@
 <?php
-use core\route\Route;
+use core\Route\Router;
 
-Route::any('/test',function(){echo "test";});
-Route::any('/','Index/index');
-Route::any('/index','Index/index');
+Router::any('/test',function(){echo "test";});
+Router::any('/','Index/index');
+Router::any('/index','Index/index');
