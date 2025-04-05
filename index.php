@@ -2,7 +2,7 @@
 //定义应用目录
 const APP_PATH = __DIR__ . DIRECTORY_SEPARATOR;
 
-注册自动加载
+//注册自动加载
 require(APP_PATH . 'autoload.php');
 
 //注册依赖组件自动加载
