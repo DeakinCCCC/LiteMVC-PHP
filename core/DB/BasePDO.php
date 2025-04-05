@@ -9,10 +9,10 @@ class BasePDO
     {
         $dsn = "mysql:host=$host;dbname=$dbname;charset=utf8mb4";
         $options = array(
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
+            \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,
         );
-        $this->pdo = new PDO($dsn, $username, $password, $options);
+        $this->pdo = new \PDO($dsn, $username, $password, $options);
     }
 
     public function query($sql, $params = [])
