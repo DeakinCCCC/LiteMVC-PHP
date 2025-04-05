@@ -1,7 +1,7 @@
 <?php
 
 //DEBUG信息输出
-const APP_DEBUG = false;
+$APP_DEBUG = false;
 
 //定义应用目录
 const APP_PATH = __DIR__ . DIRECTORY_SEPARATOR;
