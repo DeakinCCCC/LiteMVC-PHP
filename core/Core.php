@@ -9,7 +9,7 @@ class Core
     public function run()
     {
         if(isset($APP_DEBUG) && $APP_DEBUG){
-           set_error_handler(function ($errno, $errstr ,$errfile, $errline) {
+          set_error_handler(function ($errno, $errstr ,$errfile, $errline) {
             echo "Error! ";
             throw new \Exception($errstr, $errno);
         });
