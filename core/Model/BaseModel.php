@@ -3,7 +3,7 @@ namespace core\Model;
 
 use core\DB\BasePDO;
 
-class Model extends BasePDO
+class BaseModel extends BasePDO
 {
 
     public function __construct($table)
