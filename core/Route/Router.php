@@ -76,9 +76,9 @@ class Router
     private static function handleRoute($url , $controller, $method)
     {
         $arr = [];
-        $arr['url'] = $url;
+        $arr['url'] = strtolower($url);
         $arr['controller'] = $controller;
-        $arr['method'] = $method;
+        $arr['method'] = strtolower($method);
         if (is_object($controller)){
             $arr['is_closure'] = true;
         }else{
